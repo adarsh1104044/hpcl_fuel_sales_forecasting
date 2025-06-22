@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+prophet
+crewai
+crewai-tools
+langchain-google-genai
+matplotlib
+openpyxl
+python-dotenv

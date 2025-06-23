@@ -54,7 +54,7 @@ Forecast for Outlet {selected_outlet} ({fuel_type}) for next {periods} months:
             st.subheader(f"Actual vs Predicted Sales for {selected_outlet} - {fuel_type}")
             fig = plot_actual_vs_predicted(original_data, forecast, historical_forecast, future_forecast, periods)
             st.pyplot(fig)
-# ye phle wala plot hai y_hat wala-
+            
             st.subheader(f"Forecast for Outlet {selected_outlet} - {fuel_type}")
             st.line_chart(forecast.set_index('ds')[['yhat', 'yhat_lower', 'yhat_upper']])
 
